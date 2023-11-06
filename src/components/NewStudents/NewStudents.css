@@ -1,5 +1,5 @@
-.new-cost {
-    background-color: #aac4d1;
+.new-students {
+    background-color: #0a2d4f;
     padding: 1rem;
     margin: 2rem auto;
     width: 70rem;
@@ -9,7 +9,7 @@
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
   }
   
-  .new-cost button {
+  .new-students button {
     font: inherit;
     cursor: pointer;
     padding: 1rem 2rem;
@@ -20,8 +20,8 @@
     margin-right: 3px;
   }
   
-  .new-cost button:hover,
-  .new-cost button:active {
+  .new-students button:hover,
+  .new-students button:active {
     background-color: #2a5c84b2;
     border-color: #2a5c84b2;
   }

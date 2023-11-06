@@ -4,27 +4,20 @@ import Card from "../UI/Card";
 
 const StudentsData = (props) => {
     return(
-        <Card className="costs">
+        <Card className="students">
             <StudentsItem 
-                birthday={props.students[0].birthday} 
-                nameStudent={props.students[0].nameStudent}
-                specialization={props.students[0].specialization}
+                name={props.students[0].name} 
+                dateOfBirds={props.students[0].dateOfBirds}
                 email={props.students[0].email}
-                phoneNumber={props.students[0].phoneNumber}
+                telephone={props.students[0].telephone}
+                dateCreateAccount={props.students[0].dateCreateAccount}
             />
             <StudentsItem 
-                birthday={props.students[1].birthday} 
-                nameStudent={props.students[1].nameStudent}
-                specialization={props.students[1].specialization}
+                name={props.students[1].name} 
+                dateOfBirds={props.students[1].dateOfBirds}
                 email={props.students[1].email}
-                phoneNumber={props.students[1].phoneNumber}
-            />
-            <StudentsItem 
-                birthday={props.students[2].birthday} 
-                nameStudent={props.students[2].nameStudent}
-                specialization={props.students[2].specialization}
-                email={props.students[2].email}
-                phoneNumber={props.students[2].phoneNumber}
+                telephone={props.students[1].telephone}
+                dateCreateAccount={props.students[1].dateCreateAccount}
             />
         </Card>
     );

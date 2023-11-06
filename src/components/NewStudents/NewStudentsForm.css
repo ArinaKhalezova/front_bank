@@ -1,18 +1,19 @@
-.new-cost__controls {
+.new-students__controls {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
     text-align: left;
+    color: #fff;
   }
   
-  .new-cost__control label {
+  .new-students__control label {
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
   }
   
-  .new-cost__control input {
+  .new-students__control input {
     font: inherit;
     padding: 0.5rem;
     border-radius: 5px;
@@ -21,7 +22,7 @@
     max-width: 100%;
   }
   
-  .new-cost__actions {
+  .new-students__actions {
     text-align: left;
   }
   

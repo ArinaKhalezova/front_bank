@@ -1,25 +1,25 @@
-.cost-item {
+.students-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
-    margin: 5px 0;
-    border: 3px solid #a7cacc;
-    background-color: #a7caccb1;
+    margin: 25px 0;
+    border: 5px solid #ffffff;
+    background-color: rgba(69, 130, 192, 0.487);
   }
-  
-  .cost-item__description {
+  h1{
+    font-size: 2rem;
+    margin: 1rem 1rem;
+    color: #ffffff;
+  }
+  .students-item__description {
     display: flex;
     flex-direction: column;
-    gap: 1rpx;
-    align-items: flex-end;
-    flex-flow: column-reverse;
-    justify-content: flex-start;
-    flex: 1;
+    align-items: center;
 
   }
   
-  .cost-item h2 {
+  .students-item h2, h3{
     color: #3a3a3a;
     font-size: 1rem;
     flex: 1;
@@ -27,29 +27,17 @@
     color: #ffffff;
   }
   
-  .cost-item__price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: rgba(80, 105, 114, 0.754);
-    border: 2px solid white;
-    padding: 0.5rem;
-    border-radius: 15px;
-  }
-  
   @media (min-width: 580px) {
-    .cost-item__description {
-      flex-direction: row;
+    .students-item__description {
+      flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      flex: 1;
     }
   
-    .cost-item__description h2 {
+    .students-item__description h2 {
       font-size: 1.25rem;
     }
   
-    .cost-item__price {
+    .students-item__price {
       font-size: 1.25rem;
       padding: 0.5rem 1.5rem;
     }

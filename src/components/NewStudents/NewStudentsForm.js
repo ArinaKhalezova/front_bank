@@ -3,73 +3,71 @@ import './NewStudentsForm.css'
 
 const NewStudentsForm = () => {
 
-    const [inputBirthday, setInputBirthday] = useState('');
-    const [inputNameStudent, setInputNameStudent] = useState('');
-    const [inputSpecialization, setInputSpecialization] = useState('');
+    const [inputDateOfBirds, setInputDateOfBirds] = useState('');
+    const [inputName, setInputName] = useState('');
+    const [inputDateCreateAccount, setInputDateCreateAccount] = useState('');
     const [inputEmail, setinputEmail] = useState('');
-    const [inputPhoneNumber, setPhoneNumber] = useState('');
+    const [inputTelephone, setInputTelephone] = useState('');
 
-    const birthdayChangeHandler = (event) => {
-        setInputBirthday(event.target.value);
+    const dateOfBirdsChangeHandler = (event) => {
+        setInputDateOfBirds(event.target.value);
     };
-    const nameStudentChangeHandler = (event) => {
-        setInputNameStudent(event.target.value);
+    const nameChangeHandler = (event) => {
+        setInputName(event.target.value);
     };
-    const specializationChangeHandler = (event) => {
-        setInputSpecialization(event.target.value);
+    const dateCreateAccountChangeHandler = (event) => {
+        setInputDateCreateAccount(event.target.value);
     };
     const emailChangeHandler = (event) => {
         setinputEmail(event.target.value);
     };
-    const phoneNumberChangeHandler = (event) => {
-        setPhoneNumber(event.target.value);
+    const telephoneChangeHandler = (event) => {
+        setInputTelephone(event.target.value);
     };
 
     const submitHandler = (event) => {
         event.preventDefault();
 
         const studentsData = {
-            birthday: new Date(inputBirthday),
-            nameStudent: inputNameStudent,
-            specialization: inputSpecialization,
+            name: inputName,
+            dateOfBirds: new Date(inputDateOfBirds),
+            dateCreateAccount: new Date(inputDateCreateAccount),
             email: inputEmail,
-            phoneNumber: inputPhoneNumber
+            telephone: inputTelephone
         };
 
-        setInputBirthday('');
-        setInputNameStudent('');
-        setInputSpecialization('');
+        setInputDateOfBirds('');
+        setInputName('');
+        setInputDateCreateAccount('');
         setinputEmail('');
-        setPhoneNumber('');
+        setInputTelephone('');
     };
 
     return (
         <form onSubmit={submitHandler}>
-            <div className="new-cost__controls">
-                 <div className="new-cost__control">
-                    <label>Дата рождения</label>
-                    <input type="date" value={inputBirthday} min='2000-01-01' step='2010-01-01' onChange={birthdayChangeHandler}/>
-                </div>
-                <div className="new-cost__control">
+            <div className="new-students__controls">
+                <div className="new-students__control">
                     <label>ФИО</label>
-                    <input type="text" value={inputNameStudent} onChange={nameStudentChangeHandler}/>
+                    <input type="text" value={inputName} onChange={nameChangeHandler}/>
                 </div>
-                <div className="new-cost__control">
+                 <div className="new-students__control">
+                    <label>Дата рождения</label>
+                    <input type="date" value={inputDateOfBirds} min='2000-01-01' step='2010-01-01' onChange={dateOfBirdsChangeHandler}/>
+                </div>
+                <div className="new-students__control">
+                    <label>Дата регестрации</label>
+                    <input type="date" value={inputDateOfBirds} min='2000-01-01' step='2024-01-01' onChange={dateCreateAccountChangeHandler}/>
+                </div>
+                <div className="new-students__control">
                     <label>Почта</label>
                     <input type="email" name="student_email" value={inputEmail} onChange={emailChangeHandler}/>
                 </div>
-                <div className="new-cost__control">
+                <div className="new-students__control">
                     <label>Номер телефона</label>
-                    <input type="tel" name="tel" value={inputPhoneNumber} onChange={phoneNumberChangeHandler}></input>
+                    <input type="tel" name="tel" value={inputTelephone} onChange={telephoneChangeHandler}></input>
     
                 </div>
-                 <div className="new-cost__control">
-                    <label>Специализация</label>
-                    <input type="text" value={inputSpecialization} onChange={specializationChangeHandler}/>
-                </div>
-                
-                
-                <div className="new-cost__actions">
+                <div className="new-students__actions">
                 <button type="submit" >Добавить студента</button>
                 </div>
             </div>
