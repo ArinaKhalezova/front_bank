@@ -1,10 +1,10 @@
 import StudentsItem from "./StudentsItem";
 import './StudentsData.css';
-import Card from "../UI/Card";
+import Wrap from "../UI/Wrap";
 
 const StudentsData = (props) => {
     return(
-        <Card className="students">
+        <Wrap className="students">
             <StudentsItem 
                 name={props.students[0].name} 
                 dateOfBirds={props.students[0].dateOfBirds}
@@ -19,7 +19,7 @@ const StudentsData = (props) => {
                 telephone={props.students[1].telephone}
                 dateCreateAccount={props.students[1].dateCreateAccount}
             />
-        </Card>
+        </Wrap>
     );
 };
 

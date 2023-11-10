@@ -5,7 +5,6 @@ const NewStudentsForm = () => {
 
     const [inputDateOfBirds, setInputDateOfBirds] = useState('');
     const [inputName, setInputName] = useState('');
-    const [inputDateCreateAccount, setInputDateCreateAccount] = useState('');
     const [inputEmail, setinputEmail] = useState('');
     const [inputTelephone, setInputTelephone] = useState('');
 
@@ -14,9 +13,6 @@ const NewStudentsForm = () => {
     };
     const nameChangeHandler = (event) => {
         setInputName(event.target.value);
-    };
-    const dateCreateAccountChangeHandler = (event) => {
-        setInputDateCreateAccount(event.target.value);
     };
     const emailChangeHandler = (event) => {
         setinputEmail(event.target.value);
@@ -31,14 +27,12 @@ const NewStudentsForm = () => {
         const studentsData = {
             name: inputName,
             dateOfBirds: new Date(inputDateOfBirds),
-            dateCreateAccount: new Date(inputDateCreateAccount),
             email: inputEmail,
             telephone: inputTelephone
         };
 
         setInputDateOfBirds('');
         setInputName('');
-        setInputDateCreateAccount('');
         setinputEmail('');
         setInputTelephone('');
     };
@@ -52,11 +46,7 @@ const NewStudentsForm = () => {
                 </div>
                  <div className="new-students__control">
                     <label>Дата рождения</label>
-                    <input type="date" value={inputDateOfBirds} min='2000-01-01' step='2010-01-01' onChange={dateOfBirdsChangeHandler}/>
-                </div>
-                <div className="new-students__control">
-                    <label>Дата регестрации</label>
-                    <input type="date" value={inputDateOfBirds} min='2000-01-01' step='2024-01-01' onChange={dateCreateAccountChangeHandler}/>
+                    <input type="date" value={inputDateOfBirds} min='1990-01-01' step='2025-01-01' onChange={dateOfBirdsChangeHandler}/>
                 </div>
                 <div className="new-students__control">
                     <label>Почта</label>
@@ -68,7 +58,7 @@ const NewStudentsForm = () => {
     
                 </div>
                 <div className="new-students__actions">
-                <button type="submit" >Добавить студента</button>
+                <button type="submit" onClick={submitHandler}>Добавить студента</button>
                 </div>
             </div>
         </form>

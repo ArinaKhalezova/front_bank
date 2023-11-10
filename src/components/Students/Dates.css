@@ -8,26 +8,26 @@
   padding: 0rem;
   }
   
-  .date h1 {
-    font-size: 1.35rem;
-    margin-right: 1rem;
-  }
+.date h1 {
+  font-size: 1.35rem;
+  margin-right: 1rem;
+}
 
-  .students-date__month {
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding-right: 0.2rem;
-  }
-  
-  .students-date__year {
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding-right: 0.2rem;
-  }
-  
-  .students-date__day {
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding-right: 0.2em;
-  }
+.students-date__month {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-right: 0.2rem;
+}
+
+.students-date__year {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-right: 0.2rem;
+}
+
+.students-date__day {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-right: 0.2em;
+}
   
