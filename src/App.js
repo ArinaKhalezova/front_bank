@@ -13,6 +13,7 @@ import React, { useState, useEffect } from 'react';
 //тест главной страницы
 import Header from './Pages/Header/Header.js';
 import WrapperGrid from './Pages/Header/WrapperGrid.js';
+import ServicesData from './Pages/Services/ServicesData.js';
 
 
 const App = () => {
@@ -35,6 +36,29 @@ const App = () => {
     }
   ];
 
+  const services = [
+    {
+        image: 'картинка',
+        title: 'Услуга1',
+        text: 'Очень интересное описание услуги чтобы все влюбились в наш банк и мы стали миллионерами долларовыми потому что рубль не устойчив простите'
+    },
+    {
+        image: 'картинка',
+        title: 'Услуга2',
+        text: 'очень интересное и привлекательное описание услуги  и долларовыми потому что рубль не устойчив простит'
+    },
+    {
+        image: 'картинка',
+        title: 'Услуга3',
+        text: 'очень интересное и привлекательное описание услуги чтобы все влюбились в наш банк '
+    },
+    {
+        image: 'картинка',
+        title: 'Услуга4',
+        text: 'очень интересное и привлекательное все влюбились в наш банк и мы стали миллионерами долларовыми потому что рубль не устойчив простите'
+    },
+];
+
 // с апи_____
   // const [students, sendStudents] = useState([])
 
@@ -51,8 +75,7 @@ const App = () => {
     {/* тест главной страницы */}
     <WrapperGrid>
       <Header/>
-
-
+      <ServicesData services={services}/>
 
       <NewStudents />
       {students.length > 0 ? <StudentsData students={students}/> : <p>Список пуст</p>}

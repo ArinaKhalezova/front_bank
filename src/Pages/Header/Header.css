@@ -14,23 +14,24 @@
     width: 797px;
     transform: rotate(-14.92deg);
     top: 32px;
-    left: 90px;
+    left: 180px;
     opacity: 0.9;
 }
 .header-discription{
     z-index: 2;
     position: absolute;
-    max-width: 800px;
-    right: 220px;
-    top: 208px;
+    max-width: 500px;
+    right: 260px;
+    top: 272px;
 }
 .header-title{
-    font-size: 60px;
+    font-size: 40px;
     color: #292B36;
     text-align: right;
+    margin-bottom: 25px;
 }
 .header-text{
-    font-size: 28px;
+    font-size: 24px;
     color: #014282;
     text-align: right;
 }
