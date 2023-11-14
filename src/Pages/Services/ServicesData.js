@@ -3,7 +3,9 @@ import "../Services/ServicesData.css"
 
 const ServicesData = (props) => {
     return(
-        <div className="services-item">
+        <div>
+            <h1 className="services-header">ПРЕДЛОЖЕНИЯ БАНКА </h1>
+             <div className="services-item">
             <ServiceItem 
                 image={props.services[0].image} 
                 title={props.services[0].title}
@@ -24,6 +26,7 @@ const ServicesData = (props) => {
                 title={props.services[3].title}
                 text={props.services[3].text}
             />
+            </div>
         </div>
     );
 };

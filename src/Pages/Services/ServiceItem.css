@@ -4,11 +4,12 @@
     align-items: center;
     width: 260px;
     text-align: center;
-    margin: 10px 40px;
+    margin: 10px 30px;
     padding: 0 10px;
 }
 .service-image {
-    width: 150px;
+    width: 130px;
+    margin-bottom: 20px;
 }
 .service-title{
     font-size: 32px;

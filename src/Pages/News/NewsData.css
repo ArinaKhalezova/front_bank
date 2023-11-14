@@ -1,9 +1,10 @@
-.services-header{
+.news-header{
     font-size: 50px;
-    margin-left: 194px;
+    text-align: end;
+    margin-right: 194px;
     margin-bottom: 27px;
 }
-.services-item {
+.news-item {
     display: flex;
     justify-content: center;
     height: 504px;
