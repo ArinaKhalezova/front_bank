@@ -1,0 +1,22 @@
+.currencies {
+  display: flex;
+  justify-content: space-between;
+  width: 667px;
+}
+.currencies-info {
+}
+.currencies-info_column {
+  list-style: none;
+  font-size: 20px;
+}
+.currencies-info_item {
+  margin-bottom: 40px;
+}
+.currencies-info_item__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 42px;
+}
+.currencies-line {
+  width: 415px;
+}

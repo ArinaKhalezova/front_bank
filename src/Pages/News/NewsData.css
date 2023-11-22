@@ -1,11 +1,10 @@
-.news-header{
-    font-size: 50px;
-    text-align: end;
-    margin-right: 194px;
-    margin-bottom: 27px;
+.news-header {
+  font-size: 50px;
+  text-align: end;
+  margin-bottom: 45px;
 }
 .news-item {
-    display: flex;
-    justify-content: center;
-    height: 504px;
+  display: flex;
+  justify-content: space-between;
+  height: 465px;
 }

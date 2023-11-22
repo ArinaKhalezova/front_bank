@@ -3,7 +3,7 @@ import "../Updates/UpdatesData.css"
 
 const UpdatesData = (props) => {
     return(
-        <div>
+        <div className="wrap">
             <h1 className="updates-header">ПОСЛЕДНИЕ ОБНОВЛЕНИЯ</h1>
              <div className="updates-item">
             <UpdateItem  

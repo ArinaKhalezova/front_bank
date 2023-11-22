@@ -1,8 +1,11 @@
-.services-header {
+.currencies-wrapper {
+}
+.currencies-title {
   font-size: 50px;
+  text-align: right;
   margin-bottom: 27px;
 }
-.services-item {
+.cur-wrap {
   display: flex;
   justify-content: space-between;
   height: 490px;

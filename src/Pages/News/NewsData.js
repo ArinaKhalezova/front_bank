@@ -3,7 +3,7 @@ import "../News/NewsData.css"
 
 const NewsData = (props) => {
     return(
-        <div>
+        <div className="wrap">
             <h1 className="news-header">ПОСЛЕДНИЕ НОВОСТИ</h1>
              <div className="news-item">
             <NewItem 

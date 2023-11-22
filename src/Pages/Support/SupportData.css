@@ -1,0 +1,32 @@
+.support-header{
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 27px;
+}
+.sup-wrap{
+
+}
+.supports{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 442px;
+    margin-bottom: 18px;
+}
+.support-item_first{
+    display: flex;
+    justify-content: space-between;
+}
+.support-item_second{
+    display: flex;
+    justify-content: space-between;
+}
+.support-SavGTU{
+
+}
+.img-SamGTU{
+    height: 350px;
+}
+.support-item{
+
+}

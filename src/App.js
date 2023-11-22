@@ -1,13 +1,8 @@
 // import CostItem from "./components/CostItem";
 
-//axios!!!!!!!!!!!!!!!
-import PersonList from './components/Axios/PersonList.js';
-import PersonAdd from './components/Axios/PersonAdd';
-import PersonRemove from './components/Axios/PersonRemove';
-import axios from 'axios';
+// import NewStudents from "./components/NewStudents/NewStudents.js";
+// import StudentsData from "./components/Students/StudentsData.js";
 
-import NewStudents from "./components/NewStudents/NewStudents.js";
-import StudentsData from "./components/Students/StudentsData.js";
 import React, { useState, useEffect } from 'react';
 
 //тест главной страницы
@@ -17,28 +12,31 @@ import ServicesData from './Pages/Services/ServicesData.js';
 import Images from './Pages/Images.js';
 import NewsData from './Pages/News/NewsData.js';
 import UpdatesData from './Pages/Updates/UpdatesData.js';
+import Currencies from './Pages/Currencies/Currencies.js';
+import SupportData from './Pages/Support/SupportData.js';
+import Footer from './Pages/Footer/Footer.js';
 
 const App = () => {
 
 // без апи____
-  const students = [
-    {
-      name: 'Иванчин Михаил',
-      dateOfBirds: new Date(2004, 5, 5),
-      email: 'ivanchin@mail.ru',
-      telephone: '+7 (927)-745-99-00',
-      dateCreateAccount: new Date(2022, 12, 15)
-    },
-    {
-      name: 'Ильин Артемий',
-      dateOfBirds: new Date(2004, 11, 11),
-      email: 'ARTEM@mail.ru',
-      telephone: '+7 (927)-755-00-33',
-      dateCreateAccount: new Date(2022, 11, 11)
-    }
-  ];
+const students = [
+  {
+    name: 'Иванчин Михаил',
+    dateOfBirds: new Date(2004, 5, 5),
+    email: 'ivanchin@mail.ru',
+    telephone: '+7 (927)-745-99-00',
+    dateCreateAccount: new Date(2022, 10, 7)
+  },
+  {
+    name: 'Ильин Артемий',
+    dateOfBirds: new Date(2004, 9, 1),
+    email: 'ARTEM@mail.ru',
+    telephone: '+7 (927)-755-00-33',
+    dateCreateAccount: new Date(2022, 9, 4)
+  }
+];
 
-  const services = [
+const services = [
     {
       image: Images.service1,
       title: 'Банковские карты',
@@ -94,6 +92,29 @@ const updates = [
   },
 ];
 
+const supports = [
+  {
+    link: 'https://samgtu.ru/',
+    title: 'Официальный сайт СамГТУ',
+    image: Images.support1,    
+  },
+  {
+    link: 'https://samgtu.ru/#:~:text=278%2D43%2D11-,rector%40samgtu.ru,-%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B2%D1%8F%D0%B7%D1%8C',
+    title: 'Почта',
+    image: Images.support2,    
+  },
+  {
+    link: 'https://vk.com/samgtu_officiall',
+    title: 'Сообщество ВКонтакте',
+    image: Images.support3,    
+  },
+  {
+    link: 'https://t.me/samgtu',
+    title: 'Телеграмм канал СамГТУ',
+    image: Images.support4,    
+  },
+];
+
 // с апи_____
   // const [students, sendStudents] = useState([])
 
@@ -114,23 +135,18 @@ const updates = [
       <ServicesData services={services}/>
       <NewsData news={news}/>
       <UpdatesData updates={updates}/>
+      <Currencies/>
+      <SupportData supports={supports}/>
+      <Footer/>
+    </WrapperGrid>
       
-      <NewStudents />
-      {students.length > 0 ? <StudentsData students={students}/> : <p>Список пуст</p>}
+      
+      {/* <NewStudents />
+      {students.length > 0 ? <StudentsData students={students}/> : <p>Список пуст</p>} */} 
 
       {/* <StudentsData students={students}/> */}
-    </WrapperGrid>
+    
     </div>
-    
-    
-
-    {/* axios!!!!!!!!!!!!!!! */}
-      {/* <PersonAdd/>
-      <PersonList/> 
-      <PersonRemove/> */}
-    {/* axios!!!!!!!!!!!!!!! */}
-    
-      
    </div>
   );
 }

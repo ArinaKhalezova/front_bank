@@ -3,8 +3,8 @@ import "../Services/ServicesData.css"
 
 const ServicesData = (props) => {
     return(
-        <div>
-            <h1 className="services-header">ПРЕДЛОЖЕНИЯ БАНКА </h1>
+        <div className="wrap">
+            <h1 className="services-header">ПРЕДЛОЖЕНИЯ БАНКА</h1>
              <div className="services-item">
             <ServiceItem 
                 image={props.services[0].image} 
