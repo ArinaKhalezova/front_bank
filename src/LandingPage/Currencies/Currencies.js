@@ -5,6 +5,7 @@ import "./Currencies.css"
 const Currencies = () => {
     return(
         <div className="wrap">
+            <a name="currencies"></a>
             <h1 className="currencies-title">КУРС ВАЛЮТ</h1>
             <div className="cur-wrap">
                 <CurrenciesInfo/>

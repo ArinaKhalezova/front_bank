@@ -3,7 +3,7 @@ import "./SupportItem.css"
 const SupportItem = (props) => {
     return(
         <div className="support-place">
-            <a href={props.link} target="" className="support-title">{props.title}</a>
+            <a href={props.link} target="blank" className="support-title">{props.title}</a>
             <img src={props.image} alt="Support" className="support-image"/>
         </div>
     )

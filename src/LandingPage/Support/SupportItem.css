@@ -11,6 +11,7 @@
   backdrop-filter: blur(2px);
 }
 .support-title {
+  width: 562px;
   padding: 32px 27px;
   font-size: 20px;
   color: #014282;

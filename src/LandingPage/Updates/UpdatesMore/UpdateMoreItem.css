@@ -1,0 +1,21 @@
+.new-more{
+}
+.new-more_title{
+
+}
+.new-more_info{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(37, 106, 173, 0.13);
+    border-radius: 25px;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    backdrop-filter: blur(2px);
+    padding: 93px 30px;
+}
+.new-more_image{
+
+}
+.new-more_text{
+    width: 517px;
+    font-size: 28px;
+}
