@@ -1,0 +1,17 @@
+.account-wrap{
+    height: 100vh;
+}
+.account-navbar{
+    height: 200px;
+}
+.account__item{
+    display: flex;
+    justify-content: center;
+}
+.account__student{
+    margin: 0px 50px;
+
+}
+.account__card{
+    margin: 0px 50px;
+}

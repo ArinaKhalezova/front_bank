@@ -1,6 +1,6 @@
 import "./SupportData.css"
 import SupportItem from "./SupportItem";
-import SamGTU from "../image/SamGTU.png";
+import SamGTU from "../../image/SamGTU.png";
 
 const SupportData = (props) => {
     return(

@@ -12,6 +12,16 @@ import New1 from "./image/New1.png"
 import New2 from "./image/New2.png"
 import New3 from "./image/New3.png"
 
+import PoliBank from "./image/PoliBank.png"
+
+import Card_front from "./image/лицевая.png"
+
+import Student_photo from "./image/student-photo.png"
+
+import Updates1 from "./image/Updates1.png"
+import Updates2 from "./image/Updates2.png"
+import Updates3 from "./image/Updates3.png"
+
 const Images = {
     service1:Service1,
     service2:Service2,
@@ -26,6 +36,16 @@ const Images = {
     new1:New1,
     new2:New2,
     new3:New3,
+
+    poliBankText:PoliBank,
+
+    card_front:Card_front,
+
+    student_photo:Student_photo,
+
+    updates1:Updates1,
+    updates2:Updates2,
+    updates3:Updates3,
 }
 
 export default Images;

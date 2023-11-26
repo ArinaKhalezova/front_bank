@@ -1,8 +1,8 @@
-import './WrapperGrid.css';
+import './PoliBankText.css';
 import Images from '../../Images';
 
-const WrapperGrid = (props) => {
-    const classes = 'wrap-grid ' + props.className;
+const PoliBankText = (props) => {
+    const classes = 'poliBankText ' + props.className;
     return(
         <div className={classes}>
             {props.children}
@@ -11,4 +11,4 @@ const WrapperGrid = (props) => {
     ) 
 };
 
-export default WrapperGrid;
+export default PoliBankText;

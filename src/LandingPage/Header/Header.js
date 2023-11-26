@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Card from "../image/Card.png";
+import Card from "../../image/Card.png";
 import './Header.css'
 
 const Header = () => {

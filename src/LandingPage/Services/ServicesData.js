@@ -2,7 +2,6 @@ import ServiceItem from "./ServiceItem";
 import "../Services/ServicesData.css"
 
 const ServicesData = (props) => {
-    console.log(props)
     return(
         <div className="wrap">
             <a name="services"></a>

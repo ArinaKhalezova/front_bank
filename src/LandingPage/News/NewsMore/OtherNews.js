@@ -1,5 +1,5 @@
 import NewsData from "../NewsData.js";
-import { News } from '../../../Arrays.js';
+import { News } from '../../Arrays.js';
 
 const OtherNews = () => {
     return(

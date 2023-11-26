@@ -3,7 +3,7 @@ import Navbar from "../../Header/Navbar.js"
 import NewMoreItem from "./NewMoreItem.js";
 import OtherNews from "./OtherNews.js";
 import Footer from "../../Footer/Footer.js"
-import Images from "../../Images.js";
+import Images from "../../../Images.js";
 import "./NewMoreData.css"
 
 const news_details = [

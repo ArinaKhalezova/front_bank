@@ -1,4 +1,4 @@
-import Images from './LandingPage/Images.js';
+import Images from '../Images.js';
 
 const Services = [
   {

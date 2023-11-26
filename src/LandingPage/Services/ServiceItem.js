@@ -8,5 +8,6 @@ const ServiceItem = (props) =>{
             <p className="service-text">{props.text}</p>
         </div>
     );
-}
+};
+
 export default ServiceItem;

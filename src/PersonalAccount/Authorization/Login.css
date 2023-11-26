@@ -1,0 +1,19 @@
+.login-wrapper{
+    height: 100vh;
+}
+.login-item{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 19px;
+}
+.login-form{
+
+}
+.login-text{
+    letter-spacing: 10px;
+    width: 612px;
+    font-size: 48px;
+    font-weight: 600;
+    color: rgba(1, 66, 130, 0.346);
+}
