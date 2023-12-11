@@ -20,7 +20,7 @@ const Account = () => {
                         <CardInformation/>
                     </div>
                 </div>
-                <div>
+                <div className="account-footer">
                     <Footer/>
                 </div>
             </WrapperGrid>

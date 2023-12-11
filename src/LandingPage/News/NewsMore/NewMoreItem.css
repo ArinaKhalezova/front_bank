@@ -1,10 +1,13 @@
 .new-more{
 }
 .new-more_title{
-
+    color: #014282;
+    font-size: 49px;
+    margin-bottom: 25px;
 }
 .new-more_info{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: rgba(37, 106, 173, 0.13);
     border-radius: 25px;

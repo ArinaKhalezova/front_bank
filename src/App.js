@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import ScrollToTop from './ScrollToTop.js';
 // для путей и ссылок
 import {NewNumbOne, NewNumbTwo, NewNumbThree} from './LandingPage/News/NewsMore/NewMoreData.js';
 import {UpdateNumbOne, UpdateNumbTwo, UpdateNumbThree} from './LandingPage/Updates/UpdatesMore/UpdateMoreData.js';
@@ -14,6 +16,7 @@ const App = () => {
    <div>
     <div className='font'>
       <BrowserRouter>
+        <ScrollToTop>
           <Routes>
             <Route path="*" element={<Landing />} />
             {/* новости */}
@@ -29,7 +32,8 @@ const App = () => {
             {/* Личный кабинет */}
             <Route path="/Account" element={<Account/>}/>
           </Routes>
-        </BrowserRouter>
+        </ScrollToTop>
+      </BrowserRouter>
     </div>
    </div>
   );

@@ -1,5 +1,6 @@
 .student-info_item{
     display: flex;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(37, 106, 173, 0.13);
     width: 430px;
@@ -10,8 +11,15 @@
     backdrop-filter: blur(2px);
 }
 .student-info_photo{
-
+    height: 234px;
+    width: 182px;
+    border-radius: 25px;
 }
 .student-info_text{
-
+    width: 170px;
+    font-size: 24px;
+    color: #014282;
+}
+.student-info_text p{
+    margin-bottom: 20px;
 }
